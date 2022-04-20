@@ -6,4 +6,4 @@ server.on('request', (req, res) => {
   res.end('Hello ' + req.url.split('/')[1] + '\n')
 })
 
-server.listen(3000, () => {console.log("yoooo Server laufen tuen")});
+server.listen(process.env.PORT || 3000, () => {console.log("yoooo Server laufen tuen")});
