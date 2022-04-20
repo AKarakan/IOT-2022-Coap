@@ -1,0 +1,27 @@
+{
+  "name": "iot2022coap",
+  "version": "1.0.0",
+  "description": "iot coap hello world",
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "dependencies": {
+    "coap": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKarakan/IOT-2022-Coap.git"
+  },
+  "author": "AKarakan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKarakan/IOT-2022-Coap/issues"
+  },
+  "homepage": "https://github.com/AKarakan/IOT-2022-Coap#readme"
+}
