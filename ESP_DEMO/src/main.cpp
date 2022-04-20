@@ -7,7 +7,7 @@ const int buttonPin = 16;
 // DEFINE WIFI PARAMETER
 #define SSID "*****"
 #define WIFI_PASS "*****"
-// INITIATE COAP CLIENT
+// INITIALIZE COAP CLIENT
 coapClient coap;
 // DEFINE SERVER ADRESS
 IPAddress ip(134,102,218,18); // ETH Zurich (coap.me) server
