@@ -13,11 +13,15 @@ const req = coap.request({
   }
 })
 
-
+//payload erstellen
 var payload = {
-    username: 'aniu',
+    username: 'abdu',
 }
 
+//payload hinzufügen
+req.write(JSON.stringify(payload));
+
+//auf antword des servers reagieren
 req.on('response', (res) => {
   res.pipe(process.stdout)
   res.on('end', () => {
@@ -26,5 +30,6 @@ req.on('response', (res) => {
   })
 })
 
+//server anfrage senden
 req.end()
   
