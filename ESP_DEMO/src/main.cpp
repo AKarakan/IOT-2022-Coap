@@ -1,12 +1,10 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include "../lib/ESP-CoAP/coap_client.h"
+#include "WIFI_CREDENTIALS.h"
 
 // DEFINE PINS
 const int buttonPin = 16;
-// DEFINE WIFI PARAMETER
-#define SSID "*****"
-#define WIFI_PASS "*****"
 // INITIALIZE COAP CLIENT
 coapClient coap;
 // DEFINE SERVER ADRESS
@@ -38,7 +36,7 @@ void loop() {
             delay(250);
         }
         Serial.println(".");
-        Serial.println("GET 'coap://coap.me/test' sent succesfully!");
+        Serial.println("GET 'coap://coap.me/test' sent successfully!");
         Serial.println(" ");
         coap.get(ip, port,"test");
         buttonPressed = false;
@@ -49,8 +47,8 @@ void loop() {
 void wifi_setup()
 {
     Serial.println("Connecting to ");
-    Serial.println(SSID);
-    WiFi.begin(SSID, WIFI_PASS);
+    Serial.println(WIFI_SSID);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     while (WiFi.status() != WL_CONNECTED)
     {
         delay(100);

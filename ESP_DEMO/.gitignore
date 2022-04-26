@@ -1,6 +1,7 @@
 .pio
 CMakeListsPrivate.txt
-cmake-build-*/ 
+cmake-build-*/
+src/WIFI_CREDENTIALS.h
 
 # User-specific stuff:
 .idea/workspace.xml
