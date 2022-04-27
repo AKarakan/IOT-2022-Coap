@@ -4,7 +4,7 @@
 #include "WIFI_CREDENTIALS.h"
 
 /*
- * Constance/Variables Declaration
+ * Constants/Variables Declaration
  */
 const int kButtonPin = 16;
 const int kLedPin = 26;
