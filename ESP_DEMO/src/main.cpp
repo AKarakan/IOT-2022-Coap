@@ -53,9 +53,31 @@ void loop() {
         Serial.println(".");
         Serial.println("GET 'coap://coap.me/hello' sent successfully!");
         Serial.println(" ");
+        //get request
         coap.get(ip, kPort, "hello");
         buttonPressed = false;
     }
+
+    /*
+     * Further Examples:
+     */
+    //put request
+    //arguments server ip address,default port,resource name, payload,payloadlength
+    //coap.put(ip,port,"resourcename","0",strlen("0"));
+
+    //post request
+    //arguments server ip address,default port,resource name, payload,payloadlength
+    //coap.post(ip,port,"resourcename","0",strlen("0"));
+
+    //delete request
+    //coap.delet(ip,port,"resourcename");
+
+    //ping
+    //coap.ping(ip,port);
+
+    //observe
+    //coap.observe(ip,port,"obs",0);
+
     coap.loop();
 }
 
